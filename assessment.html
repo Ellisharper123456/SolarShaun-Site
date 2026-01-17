@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Complete our quick assessment to get personalized solar panel quotes from trusted UK installers.">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Get Your Free Solar Quote - Solar Shaun</title>
+    <link rel="stylesheet" href="assessment-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Solar Shaun home">
+                <span class="logo-text"><span style="color: #4268B4;">SOLAR</span> <span style="color: #E58740;">SHAUN</span></span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu" aria-controls="navMenu" aria-expanded="false">
+                ☰
+            </button>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#why" class="nav-link">Why Solar Panels</a>
+                <a href="index.html#about" class="nav-link">About Shaun</a>
+                <a href="assessment.html" class="nav-cta">Get Connected</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Assessment Form -->
+    <section id="assessment-form" class="form-section form-first">
+        <div class="container">
+            <h2 class="form-title">Get Connected to Trusted Solar Installers in 30 Seconds</h2>
+            <p class="form-subtitle">Answer 7 quick questions to get matched with trusted MCS-certified installers</p>
+
+            <form id="solarQuiz" class="quiz-form">
+                <!-- Progress Bar (at top) -->
+                <div class="progress-bar-top">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+
+                <!-- Step 1: Solar System Type -->
+                <div class="form-step active" data-step="1">
+                    <h3 class="question-title">What type of solar system are you looking for?</h3>
+                    <div class="options-grid-4">
+                        <label class="option-card">
+                            <input type="radio" name="solarSystem" value="solar-pv" required>
+                            <span class="option-content">
+                                <span class="option-icon">☀️</span>
+                                <span class="option-text">Solar PV</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="solarSystem" value="solar-pv-battery" required>
+                            <span class="option-content">
+                                <span class="option-icon">☀️🔋</span>
+                                <span class="option-text">Solar PV + Battery Storage</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="solarSystem" value="battery-only" required>
+                            <span class="option-content">
+                                <span class="option-icon">🔋</span>
+                                <span class="option-text">Just Battery Storage</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="solarSystem" value="not-sure" required>
+                            <span class="option-content">
+                                <span class="option-icon">🤔</span>
+                                <span class="option-text">Not Sure</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Step 2: Roof Type -->
+                <div class="form-step" data-step="2">
+                    <h3 class="question-title">What is your property's roof type?</h3>
+                    <div class="options-grid-4">
+                        <label class="option-card">
+                            <input type="radio" name="roofType" value="pitched" required>
+                            <span class="option-content">
+                                <span class="option-text">Pitched</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="roofType" value="mono-pitched" required>
+                            <span class="option-content">
+                                <span class="option-text">Mono Pitched</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="roofType" value="flat" required>
+                            <span class="option-content">
+                                <span class="option-text">Flat</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="roofType" value="unsure-other" required>
+                            <span class="option-content">
+                                <span class="option-text">Unsure/Other</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Step 3: Roof Material -->
+                <div class="form-step" data-step="3">
+                    <h3 class="question-title">What is your property's roof material?</h3>
+                    <div class="options-grid-4">
+                        <label class="option-card">
+                            <input type="radio" name="roofMaterial" value="concrete-tiles" required>
+                            <span class="option-content">
+                                <span class="option-text">Concrete Tiles</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="roofMaterial" value="clay-tiles" required>
+                            <span class="option-content">
+                                <span class="option-text">Clay Tiles</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="roofMaterial" value="slate-tiles" required>
+                            <span class="option-content">
+                                <span class="option-text">Slate Tiles</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="roofMaterial" value="other-unsure" required>
+                            <span class="option-content">
+                                <span class="option-text">Other/Unsure</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Step 4: Property Type -->
+                <div class="form-step" data-step="4">
+                    <h3 class="question-title">What type of property do you live in?</h3>
+                    <div class="options-grid options-grid-6">
+                        <label class="option-card">
+                            <input type="radio" name="propertyType" value="detached" required>
+                            <span class="option-content">
+                                <span class="option-text">Detached</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="propertyType" value="semi-detached" required>
+                            <span class="option-content">
+                                <span class="option-text">Semi-Detached</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="propertyType" value="terraced" required>
+                            <span class="option-content">
+                                <span class="option-text">Terraced</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="propertyType" value="bungalow" required>
+                            <span class="option-content">
+                                <span class="option-text">Bungalow</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="propertyType" value="flat" required>
+                            <span class="option-content">
+                                <span class="option-text">Flat</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="propertyType" value="other" required>
+                            <span class="option-content">
+                                <span class="option-text">Other</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Step 5: Home Age -->
+                <div class="form-step" data-step="5">
+                    <h3 class="question-title">When was your home built?</h3>
+                    <div class="options-grid options-grid-7">
+                        <label class="option-card">
+                            <input type="radio" name="homeAge" value="before-1900" required>
+                            <span class="option-content">
+                                <span class="option-text">Before 1900</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="homeAge" value="1900-1949" required>
+                            <span class="option-content">
+                                <span class="option-text">1900 - 1949</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="homeAge" value="1950-1982" required>
+                            <span class="option-content">
+                                <span class="option-text">1950 - 1982</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="homeAge" value="1983-1995" required>
+                            <span class="option-content">
+                                <span class="option-text">1983 - 1995</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="homeAge" value="1996-2006" required>
+                            <span class="option-content">
+                                <span class="option-text">1996 - 2006</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="homeAge" value="2007-2011" required>
+                            <span class="option-content">
+                                <span class="option-text">2007 - 2011</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="homeAge" value="2012-onwards" required>
+                            <span class="option-content">
+                                <span class="option-text">2012 Onwards</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Step 6: Bedrooms -->
+                <div class="form-step" data-step="6">
+                    <h3 class="question-title">How many bedrooms do you have?</h3>
+                    <div class="options-grid-4">
+                        <label class="option-card">
+                            <input type="radio" name="bedrooms" value="1-2" required>
+                            <span class="option-content">
+                                <span class="option-text">1 - 2</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="bedrooms" value="3-4" required>
+                            <span class="option-content">
+                                <span class="option-text">3 - 4</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="bedrooms" value="5-6" required>
+                            <span class="option-content">
+                                <span class="option-text">5 - 6</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="bedrooms" value="7+" required>
+                            <span class="option-content">
+                                <span class="option-text">7+</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Step 7: Installation Timeline -->
+                <div class="form-step" data-step="7">
+                    <h3 class="question-title">When are you considering getting solar installed?</h3>
+                    <div class="options-grid-4">
+                        <label class="option-card">
+                            <input type="radio" name="timeline" value="asap" required>
+                            <span class="option-content">
+                                <span class="option-text">ASAP</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="timeline" value="within-1-month" required>
+                            <span class="option-content">
+                                <span class="option-text">Within 1 Month</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="timeline" value="within-3-months" required>
+                            <span class="option-content">
+                                <span class="option-text">Within 3 Months</span>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="timeline" value="not-sure" required>
+                            <span class="option-content">
+                                <span class="option-text">Not Sure</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Step 8: Contact Details -->
+                <div class="form-step" data-step="8">
+                    <h3 class="question-title">We've found the best installers - Where should we send your results?</h3>
+                    <div class="contact-form">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required minlength="2" placeholder="John Smith" autocomplete="name">
+                            </div>
+                            <div class="input-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com" autocomplete="email">
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="phone">UK Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required pattern="^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$" placeholder="07123 456789" autocomplete="tel" inputmode="tel">
+                            </div>
+                            <div class="input-group">
+                                <label for="postcode">UK Postcode *</label>
+                                <input type="text" id="postcode" name="postcode" required pattern="^[A-Z]{1,2}\d[A-Z\d]?\s?\d[A-Z]{2}$" placeholder="SW1A 1AA" style="text-transform: uppercase;" autocomplete="postal-code">
+                            </div>
+                        </div>
+                        <div class="consent-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="consent" required>
+                                <span>I agree to be contacted by MCS-certified solar installers and understand my data will be shared for quotation purposes.</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="submit-button">Get Connected</button>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="form-nav">
+                    <button type="button" class="btn-back" style="display:none;">← Back</button>
+                </div>
+
+                <!-- Progress Text (at bottom) -->
+                <div class="progress-text-container">
+                    <p class="progress-text">Question <span class="current-step">1</span> of 7</p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="container">
+            <div class="info-content">
+                <div class="section-badge">MORE FOR LESS</div>
+                <h2 class="section-title">Perfect for UK homeowners</h2>
+                <p class="info-text">
+                    It's never too late to get solar panels, but the best time to install is as soon as possible.
+                </p>
+                <p class="info-text">
+                    Unfortunately, many UK homeowners are missing out on significant energy savings, leaving money on the table while energy prices remain high.
+                </p>
+                <p class="info-text">
+                    Solar panel technology has improved dramatically while costs have dropped. Installing now is the best way to lock in savings for 25+ years and protect yourself from rising energy costs. This is especially important if you have a suitable roof and plan to stay in your home long-term.
+                </p>
+                <p class="info-text">
+                    The best part about modern solar? It's easier than ever to get quotes from MCS-certified installers, the process is straightforward, and you don't need to worry about complex paperwork or hidden costs.
+                </p>
+                <div style="text-align: center;">
+                    <button class="cta-button" onclick="scrollToForm()">Get Connected</button>
+                    <p style="color: #666; font-size: 14px; margin-top: 8px; margin-bottom: 0;">Takes 30 seconds</p>
+                </div>
+            </div>
+            <div class="info-image">
+                <img src="images/Solar Savings Image.png" alt="Solar Panels on House" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/SolarShaun-1.png" alt="Solar Shaun" loading="lazy">
+                        <span>Solar Shaun</span>
+                    </div>
+                    <p>Shaun helps UK homeowners find the best solar panels for their situation.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>hello@solarshaun.co.uk</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="assessment.html">Get Assessment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-disclaimer">
+                <p>© 2026 Solar Shaun. All rights reserved.</p>
+                <p style="margin-top: 10px;">Disclaimer: SolarShaun.co.uk is an independent comparison and review site for Solar PV and battery storage systems. The views expressed on this website are the opinions of our writers and editors. <strong>Please note that we may receive advertising revenue from some or all of the suppliers and manufacturers listed on this website.</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assessment-script.js"></script>
+</body>
+</html>
